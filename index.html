@@ -19,24 +19,49 @@
                 <div class="camera"></div>
                 <div class="display">
                     <div class="artboard artboard-demo phone-3">
-                        <!-- account balance -->
+                        <!-- account balance start -->
                         <div class="stats shadow">
                             <div class="stat">
                                 <div class="stat-title">Account Balance</div>
                                 <div class="stat-value">9400</div>
                             </div>
                         </div>
+                        <!-- account balance end -->
                         <div class="divider"></div>
+                        <!-- feature start  -->
                         <div>
-                            <button class="btn btn-active btn-primary">Add Money</button>
+                            <button id="" class="btn btn-active btn-primary">Add Money</button>
                             <button class="btn btn-active btn-secondary">Cash Out</button>
                         </div>
+                        <!-- feature end  -->
                         <div class="divider"></div>
+                        <!-- add money form start  -->
+                        <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                            <form class="card-body">
+                              <div class="form-control">
+                                <label class="label">
+                                  <span class="label-text">Amount</span>
+                                </label>
+                                <input id="inputAddMoney" type="text" placeholder="enter amount" class="input input-bordered" required />
+                              </div>
+                              <div class="form-control">
+                                <label class="label">
+                                  <span class="label-text">Pin</span>
+                                </label>
+                                <input id="inputPin" type="password" placeholder="enter your pin" class="input input-bordered" autocomplete="off" required />
+                              </div>
+                              <div class="form-control mt-6">
+                                <button id="btn-add-money" class="btn btn-primary">Add Money</button>
+                              </div>
+                            </form>
+                          </div>
+                          <!-- form end  -->
                     </div>
                 </div>
             </div>
         </section>
     </main>
+    <script src="./utilities.js"></script>
     <script src="./addMoney.js"></script>
 </body>
 
