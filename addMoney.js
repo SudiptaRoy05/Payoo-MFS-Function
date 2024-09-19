@@ -1,9 +1,18 @@
-document.getElementById('btn-add-money').addEventListener('click',function(e){
+document.getElementById('btn-add-money').addEventListener('click', function (e) {
     e.preventDefault();
 
-   const addMoney = getValueById('inputAddMoney');
-   console.log("Added amount",addMoney);
+    const addMoney = getInputFieldValueById('inputAddMoney');
+    const inputPin = getInputFieldValueById('inputPin');
 
-   const inputPin = getValueById('inputPin');
-   console.log("entered pin",inputPin);
+    if (inputPin === 1234) {
+
+        const balance = getTextFieldValueById('availableBalance');
+        const newBalance = balance + addMoney;
+
+        document.getElementById('availableBalance').innerText = newBalance;
+
+    } else {
+        alert('failed to add money')
+    }
+
 })
