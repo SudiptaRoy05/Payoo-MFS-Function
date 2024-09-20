@@ -20,7 +20,7 @@ function showSectionById(id) {
 
     document.getElementById('cashOutForm').classList.add('hidden');
 
-    // document.getElementById('transactionList').classList.add('hidden');
+    document.getElementById('transactionList').classList.add('hidden');
     
     document.getElementById(id).classList.remove('hidden');
 }
